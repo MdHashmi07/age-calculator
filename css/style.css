@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+    background-color: white;
+    width: 40vw;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px 10px 100px 10px;
+}
+
+.date-field {
+    margin: 2rem 2.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.7rem;
+}
+
+.date-blocks {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.date-blocks>label {
+    color: #6c6c6c;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.date-blocks>input {
+    padding: 0.7rem 1rem 0.7rem 0.7rem;
+    border: 1px solid #d5d4d4;
+    width: 5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #494747;
+    margin-top: 0.9rem;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+hr {
+    background-color: #f8f5f5;
+    margin: 0rem 2.5rem;
+    font-weight: 100;
+}
+
+.arrow-div {
+    position: relative;
+}
+
+.down-arrow {
+    width: 1.5rem;
+    background-color: #864cff;
+    padding: 0.8rem 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -1.6rem;
+    right: 2.4rem;
+}
+
+.user-dob {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: 1rem;
+}
+
+.user-dob>p,
+span {
+    font-style: italic;
+}
+
+.user-birth-date {
+    margin-left: 2.5rem;
+}
+
+.dash {
+    color: #864cff;
+    letter-spacing: -4px;
+}
+
+.date-color {
+    color: #864cff;
+}
+
+.auth-msg {
+    margin: 5px 0px 0px 0px;
+    color: red;
+}

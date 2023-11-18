@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="date-field">
+        <div class="day-block date-blocks">
+          <label for="day">DAY</label>
+          <input type="text" id="day" placeholder="DD"  maxlength="2" min="0" max="9" pattern="[0-9]"/>
+          <p class="day-invalid-msg auth-msg"></p>
+        </div>
+        <div class="month-block date-blocks">
+            <label for="month">MONTH</label>
+            <input type="text" id="month" placeholder="MM" maxlength="2" min="0" max="9" pattern="[0-9]"/>
+            <p class="month-invalid-msg auth-msg"></p>
+        </div>
+        <div class="year-block date-blocks">
+            <label for="year">YEAR</label>
+            <input type="text" id="year" placeholder="YYYY" maxlength="4" min="0" max="99" pattern="[0-9]"/>
+            <p class="year-invalid-msg auth-msg"></p>
+        </div>
+      </div>
+      <div class="arrow-div">
+        <hr>
+        <img src="images/arrow-down-solid.svg" alt="arrow" class="down-arrow">
+      </div>
+      <div class="user-birth-date">
+        <div class="user-dob">
+            <span><span class="year-dashes date-color"><span class="dash">--</span> <span class="dash">--</span></span> years</span>
+        </div>
+        <div class="user-dob">
+            <span><span class="month-dashes date-color"><span class="dash">--</span> <span class="dash">--</span></span> months</span>
+        </div>
+        <div class="user-dob">
+            <span><span class="day-dashes date-color"><span class="dash">--</span> <span class="dash">--</span></span> days</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
